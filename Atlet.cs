@@ -45,8 +45,10 @@ namespace OOP02
                 System.Windows.Forms.MessageBox.Show("Sem utahanej :(, smolík");
             }
         }
-        public void Spi(double dobaSpanku)
+        public void Spi(int dobaSpanku)
         {
+            if ((unava - dobaSpanku * 100) < 0) unava = 0;
+            else unava -= dobaSpanku * 100;
         }
 
     }
