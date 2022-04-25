@@ -36,7 +36,7 @@ namespace OOP02
         }
         public void Behej(int kilometr)
         {
-            if(unava < 200 && (unava + kilometr * 10) <200) 
+            if(unava <= 200 && (unava + kilometr * 10) <=200) 
             {
                 unava += kilometr * 10;
             }

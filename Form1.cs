@@ -16,10 +16,19 @@ namespace OOP02
         {
             InitializeComponent();
         }
-
+        Atlet atlet1 = new Atlet("Pepa", "Bažiňák");
         private void button1_Click(object sender, EventArgs e)
         {
+            
+            atlet1.Behej(5);
+            MessageBox.Show(atlet1.GetUnava().ToString());
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            atlet1.Spi(1);
+            MessageBox.Show(atlet1.GetUnava().ToString());
         }
     }
 }
